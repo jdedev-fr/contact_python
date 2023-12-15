@@ -9,13 +9,13 @@ class Carnet(object):
 
     def __iter__(self):
         for i in Carnet.liste:
-            yield i.affiche()
+            yield repr(i)
 
     def rechercher_cp(self,cp):
         for contact in Carnet.liste:
             if contact.code_postal==cp:
                yield contact
 
-fgdfgdfgfdgd
+
     def rechercher_nom(self,nom):
         pass

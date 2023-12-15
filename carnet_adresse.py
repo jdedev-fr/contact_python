@@ -27,7 +27,7 @@ def supp_contact():
 def recherche_cp_contact():
     cp = input('Entrez un code postal : ')
     for contact in mon_carnet.rechercher_cp(cp):
-        print(contact.affiche())
+        print(contact)
     
 
 for i in mon_carnet:

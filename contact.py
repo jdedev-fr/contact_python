@@ -6,7 +6,10 @@ class Contact(object):
         self.code_postal=code_postal
         
     
-    def affiche(self):
+    def __str__(self):
         return f"{self.nom.upper()} {self.prenom.capitalize()} {self.code_postal}"
+    
+    def __repr__(self):
+        return f"{self.nom.upper()}|{self.prenom.capitalize()}|{self.code_postal}"
 
     
