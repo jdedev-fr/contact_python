@@ -7,6 +7,30 @@ mon_carnet.ajout(Contact("demettre","julien","56190"))
 mon_carnet.ajout(Contact("aissasnou","abdeljalil","44000"))
 mon_carnet.ajout(Contact("altujjar","razan","44000"))
 mon_carnet.ajout(Contact("alves","anthony","75000"))
+mon_carnet.ajout(Contact("alves","anthony","75000"))
+
+print(hash(mon_carnet.liste[3]))
+print(hash(mon_carnet.liste[4]))
+
+dic ={hash(mon_carnet.liste[3]):"a",hash(mon_carnet.liste[4]):"b"}
+
+if mon_carnet.liste[2]== mon_carnet.liste[1]:
+    print("c'est égal")
+else:
+    print("ce n'est pas égal")
+dic[hash(mon_carnet.liste[2])]="c"
+dic[hash(mon_carnet.liste[1])]="c"
+
+
+
+print(dic)
+
+
+if mon_carnet.liste[3]== mon_carnet.liste[4]:
+    print("c'est égal")
+else:
+    print("ce n'est pas égal")
+
 
 def affiche_contact(liste=[]):
     for index,contact in enumerate(liste):
