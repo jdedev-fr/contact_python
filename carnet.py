@@ -16,6 +16,6 @@ class Carnet(object):
             if contact.code_postal==cp:
                yield contact
 
-
+fgdfgdfgfdgd
     def rechercher_nom(self,nom):
         pass
